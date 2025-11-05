@@ -1,0 +1,652 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="index.css">
+  <title>Bootstrap demo</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+</head>
+
+<body>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
+  <!-- Navbar -->
+  <nav class="navbar sticky-top navbar-expand-lg bg-light nav-2">
+    <div class="container-fluid">
+      <a class="navbar-brand text-danger" href="#">
+        <span class="brand-text">SkillNest</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              More
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Trending Skills</a></li>
+              <li><a class="dropdown-item" href="#">Professsional Certificates</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item highlight" href="#">Learn More about SkillNest</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="ContactUs.html">Contact Us</a>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+          <button class="btn btn-outline-secondary" type="submit">Search</button>
+        </form>
+        <!-- login signup button -->
+        <div class="mx-2 my-3">
+          <button type="button" class="btn btn-outline-success me-1" data-bs-toggle="modal"
+            data-bs-target="#loginModal">Login</button>
+          <button type="button" class="btn btn-outline-success" data-bs-toggle="modal"
+            data-bs-target="#signinModal">Sign in</button>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <!-- Alert -->
+  <div class="alert alert-primary alert-dismissible fade show mb-0" role="alert">
+    <strong>Let's Go!</strong> Develop some important skills with us.
+    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+  </div>
+  <!-- login model -->
+  <div class="modal" tabindex="-1" id="loginModal" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Your Account</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+
+          <form>
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Email address</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+              <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label">Password</label>
+              <input type="password" class="form-control" id="exampleInputPassword1">
+            </div>
+            <div class="mb-3 form-check">
+              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+              <label class="form-check-label" for="exampleCheck1">Check me out</label>
+            </div>
+            <button type="submit" class="btn btn-primary">Login</button>
+          </form>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- signin model -->
+  <div class="modal" tabindex="-1" id="signinModal" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Your account</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p>
+          <form>
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Email address or Phone No.</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+              <div id="emailHelp" class="form-text">We'll never share your email and phone number with anyone else.
+              </div>
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label">Password</label>
+              <input type="password" class="form-control" id="exampleInputPassword1">
+            </div>
+            <div class="mb-3 form-check">
+              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+              <label class="form-check-label" for="exampleCheck1">Check me out</label>
+            </div>
+            <button type="submit" class="btn btn-primary">Sign in</button>
+          </form>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- thumbnail -->
+  <div class=" mb-4 rounded thumbnail">
+    <div class="col-lg-6 px-0 thumbnail-text">
+      <h1 class="display-4">Skills to transform your career and life</h1>
+      <p class="lead my-3">From critical skills to technical topics, SkillNest supports your professional development.
+      </p>
+      <button type="button" class="btn btn-primary btn-lg">Explore programs</button>
+
+      </button>
+    </div>
+  </div>
+  <!-- text -->
+  <div class=" mt-4 text-center p-3">
+    <h1 class=" text-secondary-emphasis ">The safest place for vibe coding</h1>
+    <p>From critical skills to technical topics, SkillNest supports your professional development.</p>
+  </div>
+  <!-- carousel cards -->
+  <div id="myCarousel" class="carousel slide mb-6" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active card-button"
+        aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" class="card-button"
+        aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" class="card-button"
+        aria-label="Slide 3"></button>
+    </div>
+    <div>
+      <p class="fs-2 fw-bold text-center mb-0 mt-2">Popular Skills</p>
+    </div>
+    <div class="carousel-inner">
+      <!-- card 1 -->
+      <div class="carousel-item active">
+        <div>
+          <div class="row row-cols-1  row-cols-sm-2 row-cols-md-4 g-5 m-3 ">
+            <div class="col">
+              <div class="card h-100">
+                <img src="images/card 1.jpg" class="card-img-top img-fluid">
+                <div class="card-body">
+                  <h5 class="card-title">AI for Everyone: Understanding and Applying the Basics</h5>
+                  <p class="card-text">Complete AI Engineer Training: Python, NLP, Transformers, LLMs, LangChain,
+                    Hugging Face, APIs</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <img src="images/card2.webp" class="card-img-top img-fluid" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">The Product Management for AI & Data Science Course</h5>
+                  <p class="card-text">Streamline HR Operations and Ensure Compliance with AI Tools, Frameworks, and
+                    Best Practices</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <img src="images/card3.webp" class="card-img-top img-fluid" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Modern Artificial Intelligence Masterclass: Build 6 Projects</h5>
+                  <p class="card-text">Solve Real World Business Problems with AI Solutions implemented in Python. Code
+                    templates included.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <img src="images/card4.jpg" class="card-img-top img-fluid" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">7 Days of Hands-On AI Development Bootcamp and Certifications </h5>
+                  <p class="card-text">Master Data Science and AI: Learn Python, EDA, Stats, SQL, Machine Learning, NLP,
+                    Deep Learning and Gen AI</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- card 2 -->
+      <div class="carousel-item">
+        <div>
+          <div class="row row-cols-1  row-cols-sm-2 row-cols-md-4 g-5 m-3 ">
+            <div class="col">
+              <div class="card h-100">
+                <img src="images/card9.jpg" class="card-img-top img-fluid">
+                <div class="card-body">
+                  <h5 class="card-title"> Creative Marketing and Customer Experience</h5>
+                  <p class="card-text">Leverage AI tools to create engaging marketing campaigns and personalize
+                    customerexperiences at scale</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <img src="images/card10.webp" class="card-img-top img-fluid">
+                <div class="card-body">
+                  <h5 class="card-title">Marketing and Advertising Excellence</h5>
+                  <p class="card-text">Learn to use AI for Marketing Automation, Campaign Optimization, Content Creation
+                    and Curation, Audience Analysis etc</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <img src="images/card11.jpg" class="card-img-top img-fluid">
+                <div class="card-body">
+                  <h5 class="card-title">Full Digital Marketing Course</h5>
+                  <p class="card-text">Learn Everything in Digital Marketing - PPC, SEO, SMM, Social Media Ads, GTM,
+                    GA4, Email Marketing, Web Dev And More!</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <img src="images/card12.webp" class="card-img-top img-fluid">
+                <div class="card-body">
+                  <h5 class="card-title">Digital Marketing Masterclass</h5>
+                  <p class="card-text">100s of Digital Marketing Skills: AI Marketing, Social Media Marketing, ChatGPT,
+                    SEO, Google Ads, YouTube, Video Content</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- card3 -->
+      <div class="carousel-item">
+        <div>
+          <div class="row row-cols-1  row-cols-sm-2 row-cols-md-4 g-5 m-3 ">
+            <div class="col">
+              <div class="card h-100">
+                <img src="images/card5.webp" class="card-img-top img-fluid">
+                <div class="card-body">
+                  <h5 class="card-title">Python Automate the Boring Stuff with Python Programming</h5>
+                  <p class="card-text">A practical programming course for office workers, academics, and administrators
+                    who want to improve their productivity.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <img src="images/card6.webp" class="card-img-top img-fluid">
+                <div class="card-body">
+                  <h5 class="card-title">Python for Machine Learning</h5>
+                  <p class="card-text">Learn about Data Science and Machine Learning with Python! Including Numpy,
+                    Pandas, Matplotlib, Scikit-Learn and more!</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <img src="images/card7.webp" class="card-img-top img-fluid">
+                <div class="card-body">
+                  <h5 class="card-title">Learn Python & Ethical Hacking From Scratch</h5>
+                  <p class="card-text">Write hacking programs to learn hacking and programming at the same time No prior
+                    knowledge required</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <img src="images/card8.webp" class="card-img-top img-fluid">
+                <div class="card-body">
+                  <h5 class="card-title">Python for Financial Analysis and Algorithmic Trading</h5>
+                  <p class="card-text">Learn numpy , pandas , matplotlib , quantopian , finance , and more for
+                    algorithmic trading with Python</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  <!-- trending -->
+  <div class="column-tabel m-2">
+    <p class="fs-4 fw-bold text-primary text-center">Explore what's growing in popularity</p>
+  </div>
+  <!-- color cards -->
+  <div class="container-xxl section-spacing mb-2 px-5">
+    <div class="row g-4 justify-content-center">
+
+      <div class="col-12 col-sm-6 col-md-3 d-flex">
+        <div class="card flex-fill card-bg-1 text-secondary-emphasis background-style-1 ">
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title fw-bold">Data Science</h5>
+            <p class="card-text">
+              Complete data science course, Machine learning, Master Machine Learning.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-sm-6 col-md-3 d-flex">
+        <div class="card flex-fill card-bg-2 text-secondary-emphasis background-style-2">
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title fw-bold">Python Pro</h5>
+            <p class="card-text">
+              You will master the Python programming language by building 100 unique projects over 100 days.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-sm-6 col-md-3 d-flex">
+        <div class="card flex-fill card-bg-3 text-secondary-emphasis background-style-3">
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title fw-bold">Web Dev</h5>
+            <p class="card-text">
+              Learn HTML, CSS, JS and build beautiful and responsive websites from scratch.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-sm-6 col-md-3 d-flex">
+        <div class="card flex-fill card-bg-4 text-secondary-emphasis background-style-4">
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title fw-bold">AI & ML</h5>
+            <p class="card-text">
+              Build intelligent systems using Machine Learning, Deep Learning, and AI tools.
+            </p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <!-- color cards -->
+  <div class="container-xxl section-spacing mb-2 px-5">
+    <div class="row g-4 justify-content-center">
+
+      <div class="col-12 col-sm-6 col-md-3 d-flex">
+        <div class="card flex-fill card-bg-1 text-secondary-emphasis background-style-1 ">
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title fw-bold">Leadership</h5>
+            <p class="card-text">
+              Complete data science course, Machine learning, Master Machine Learning.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-sm-6 col-md-3 d-flex">
+        <div class="card flex-fill card-bg-2 text-secondary-emphasis background-style-2">
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title fw-bold">Computer Programming</h5>
+            <p class="card-text">
+              You will master the Python programming language by building 100 unique projects over 100 days.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-sm-6 col-md-3 d-flex">
+        <div class="card flex-fill card-bg-3 text-secondary-emphasis background-style-3">
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title fw-bold">Computer Science</h5>
+            <p class="card-text">
+              Learn HTML, CSS, JS and build beautiful and responsive websites from scratch.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-sm-6 col-md-3 d-flex">
+        <div class="card flex-fill card-bg-4 text-secondary-emphasis background-style-4">
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title fw-bold">Machine Learning</h5>
+            <p class="card-text">
+              Build intelligent systems using Machine Learning, Deep Learning, and AI tools.
+            </p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <!-- black blocks -->
+  <div class="container text-center">
+    <div class="row">
+      <div class="col bg-dark black-cards color-blocks">
+       <h5 class="text-light">Unlock access to 10,000+ courses with a subscription</h5>
+          <p class="text-light">Start 7-days free trial with SkillNest</p>
+      </div>
+      
+      <div class="col bg-dark black-cards color-blocks ">
+         <h5 class="text-light">Unlock access to 10,000+ courses with a subscription</h5>
+          <p class="text-light">Start 7-days free trial with SkillNest</p>
+      </div>
+    </div>
+  </div>
+  <!-- why skillnest -->
+  <div>
+    <p class="fs-4 fw-bold ms-4 margin text-secondary-emphasis">Why people choose SkillNest?</p>
+  </div>
+  <!-- cards -->
+  <div class="container cursor my-4">
+    <div class="row g-4">
+      <!-- Card 1 -->
+      <div class="col-12 col-sm-6 col-lg-3">
+        <div class="card h-100  text-center">
+          <img src="images/pic.webp" class="card-img-top card-img-custom" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Anas A.</h5>
+            <p class="card-text">
+              "Coursera rebuilt my confidence and showed me I could dream bigger..."
+            </p>
+            <p class="card-text underline"><small class="text-body-secondary">Read More</small></p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="col-12 col-sm-6 col-lg-3">
+        <div class="card h-100 text-center">
+          <img src="images/pic1.png" class="card-img-top card-img-custom" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Sarah W.</h5>
+            <p class="card-text">
+              "Coursera's reputation for high-quality content..."
+            </p>
+            <p class="card-text underline"><small class="text-body-secondary">Read More</small></p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="col-12 col-sm-6 col-lg-3">
+        <div class="card h-100 text-center">
+          <img src="images/picture1.webp" class="card-img-top card-img-custom" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Ian Stevens</h5>
+            <p class="card-text">
+              "Learning with Coursera has expanded my professional expertise..."
+            </p>
+            <p class="card-text underline"><small class="text-body-secondary">Read More</small></p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 4 -->
+      <div class="col-12 col-sm-6 col-lg-3">
+        <div class="card h-100 text-center">
+          <img src="images/pic6.png" class="card-img-top card-img-custom" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">John D.</h5>
+            <p class="card-text">
+              "It gave me the opportunity to learn from top instructors..."
+            </p>
+            <p class="card-text underline"><small class="text-body-secondary">Read More</small></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- text -->
+  <div>
+    <p class="fs-3 fw-bold text-center m-2 mt-3 mb-3">Grow your team's skills and your business <br>Reach goals faster
+      with one of our plans or programs. Try one free today or contact sales to learn more.</p>
+  </div>
+  <!-- container logo -->
+  <div class="container-fluid mb-3 g-3">
+    <p class="fs-3 text-center margin gap-4">Trusted by over 17,000 companies and millions of learners around the
+      world
+    </p>
+    <div class="logos">
+      <div class="container text-center ">
+        <div class="row ">
+          <div class="col-6 col-sm-4"><img class="img-fluid m-2" src="images/logo1.svg" alt="logo"></div>
+          <div class="col-6 col-sm-4"><img class="img-fluid m-2" src="images/logo2.svg" alt="logo"></div>
+          <div class="col-6 col-sm-4"><img class="img-fluid m-2" src="images/logo3.svg" alt="logo"></div>
+
+          <div class="w-100 d-none d-md-block"></div>
+
+          <div class="col-6 col-sm-4"><img class="img-fluid m-2" src="images/logo4.svg" alt="logo">
+          </div>
+          <div class="col-6 col-sm-4"><img class="img-fluid m-2" src="images/logo5.svg" alt="logo">
+          </div>
+          <div class="col-6 col-sm-4"><img class="img-fluid m-2" src="images/logo6.svg" alt="logo">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Global learning -->
+  <div class="container-xl">
+    <div class="row align-items-center">
+      <div class="col-md-6">
+        <h2>Get the 2026 Global Learning & Skills Trends Report</h2>
+        <p>If you or your organization are looking for help navigating change and AI transformation, you’ll find a
+          roadmap for action in our popular annual report.</p>
+      </div>
+      <div class="col-md-6 text-end ">
+        <img class="background-pic" src="images/picture.png" alt="Image">
+      </div>
+    </div>
+  </div>
+  <!-- footer -->
+  <div class="container-fluid  bg-dark text-center text-light mt-3">
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4">
+      <div class="col">
+        <div class="m-3">
+          <ul style="list-style-type: none;">
+            <li><strong>Skills</strong></li>
+            <li>Artificial Intelligence (AI)</li>
+            <li>Cybersecurity</li>
+            <li>Data Analytics</li>
+            <li>Digital Marketing</li>
+            <li>English Speaking</li>
+            <li>Generative AI (GenAI)</li>
+            <li>Microsoft Excel</li>
+            <li>Microsoft Power BI</li>
+            <li>Project Management</li>
+            <li>Python</li>
+          </ul>
+        </div>
+      </div>
+      <div class="col">
+        <div class="m-3">
+          <ul style="list-style-type: none;">
+            <li><strong>Certificates & Programs</strong></li>
+            <li>Google Cybersecurity Certificate</li>
+            <li> Google Data Analytics Certificate</li>
+            <li> Google IT Support Certificate</li>
+            <li> Google Project Management Certificate</li>
+            <li> Google UX Design Certificate</li>
+            <li> IBM Data Analyst Certificate</li>
+            <li> IBM Data Science Certificate</li>
+            <li> Machine Learning Certificate</li>
+            <li> Microsoft Power BI Data Analyst Certificate</li>
+            <li> UI / UX Design Certificate</li>
+          </ul>
+        </div>
+      </div>
+      <div class="col">
+        <div class="m-3">
+          <ul style="list-style-type: none;">
+            <li><strong>Industries & Careers</strong></li>
+            <li>Business</li>
+            <li> Computer Science</li>
+            <li> Data Science</li>
+            <li>Education & Teaching</li>
+            <li>Engineering</li>
+            <li>Finance</li>
+            <li>Healthcare</li>
+            <li>Human Resources (HR)</li>
+            <li>Information Technology (IT)</li>
+            <li>Marketing</li>
+          </ul>
+        </div>
+      </div>
+      <div class="col">
+        <div class="m-3">
+          <ul style="list-style-type: none;">
+            <li><strong>Career Resources</strong></li>
+            <li> Career Aptitude Test</li>
+            <li>Examples of Strengths and Weaknesses for Job Interviews</li>
+            <li>High-Income Skills to Learn</li>
+            <li> How Does Cryptocurrency Work?</li>
+            <li>How to Highlight Duplicates in Google Sheets</li>
+            <li>How to Learn Artificial Intelligence</li>
+            <li>Popular Cybersecurity Certifications</li>
+            <li>Preparing for the PMP Certification</li>
+            <li>Signs You Will Get the Job After an Interview</li>
+            <li>What Is Artificial Intelligence?</li>
+          </ul>
+        </div>
+      </div>
+      <div class="col">
+        <div class="m-3">
+          <ul style="list-style-type: none;">
+            <li><strong>Community</strong></li>
+            <li>Learners</li>
+            <li>Partners</li>
+            <li>Beta Testers</li>
+            <li>Blog</li>
+            <li>The Coursera Podcast</li>
+            <li>Tech Blog</li>
+          </ul>
+        </div>
+      </div>
+      <div class="col">
+        <div class="m-3">
+          <ul style="list-style-type: none;">
+            <li><strong>More</strong></li>
+            <li>Press</li>
+            <li>Investors</li>
+            <li>Terms</li>
+            <li>Privacy</li>
+            <li>Help</li>
+            <li>Accessibility</li>
+            <li>Contact</li>
+            <li>Articles</li>
+            <li>Directory</li>
+            <li>Affiliates</li>
+            <li>Modern Slavery Statement</li>
+            <li>Manage Cookie Preferences</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="gap-2 bg-dark">
+      <hr>
+      © 2025 Coursera Inc. All rights reserved.
+    </div>
+  </div>
+</body>
+
+</html>

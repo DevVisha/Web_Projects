@@ -1,0 +1,59 @@
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  background-color: white;
+}
+.margin{
+    margin: 30px;
+}
+.cursor{
+    cursor: pointer;
+}
+.underline:hover{
+  text-decoration: underline;
+}
+.nav-2 {
+  background-color: white;      
+  z-index: 1050;                
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1); 
+}
+
+.brand-text {
+  font-family: "Great Vibes", cursive;
+  font-size: 35px;
+  font-weight: bold;
+  margin: auto;
+  background-color: white;
+}
+.columns {
+  margin: 50px;
+  padding: 50px;
+}
+.style-image {
+  object-fit: cover;
+  padding: 10px;
+}
+.text-style {
+  display: block;
+  margin: 50px;
+  padding: 50px;
+  background-color: rgb(244, 244, 244);
+}
+.text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.app-style {
+    display: flex;
+  margin: 10px;
+  padding: 10px;
+ justify-content: center;
+ align-items: center;
+}
+.footer-text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
